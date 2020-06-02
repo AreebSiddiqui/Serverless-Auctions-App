@@ -1,11 +1,12 @@
 import AWS from "aws-sdk";
 import commonMiddleware from "../lib/commonMiddleware";
 import createError from "http-errors";
+import {getAuctionById} from "./getAuction"
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 async function placeBid(event, context) {
 	const { id } = event.pathParameters;
 	const { amount } = event.body;
-
+    const auctionId = await getAuctionById(id);
 	const params = {
 		TableName: process.env.AUCTIONS_TABLE_NAME,
 		Key: { id },
@@ -15,7 +16,9 @@ async function placeBid(event, context) {
 		},
 		ReturnValues: "ALL_NEW",
 	};
-
+    if (amount <= auctionId.highestBid.amount){
+        throw new createError.Forbidden(`You cant bid low than ${auctionId.highestBid.amount}!`)
+    }
 	let updatedAuction;
 	try {
 		const result = await dynamoDb.update(params).promise();
