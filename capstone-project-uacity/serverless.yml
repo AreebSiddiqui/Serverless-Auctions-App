@@ -14,7 +14,7 @@ provider:
   environment:
     AUCTIONS_TABLE_NAME: ${self:custom.AuctionsTable.name}
   iamRoleStatements:
-    - ${file(iam/AuctionsTableIAM.yml):AuctionTableIAM}
+    - ${file(iam/AuctionsTableIAM.yml):AuctionsTableIAM}
  
 resources:
   Resources:

@@ -17,6 +17,6 @@ export async function closeAuction(auction) {
     },
   };
 
-  await dynamodb.update(params).promise();
+  const result = await dynamodb.update(params).promise();
   return result;
 }

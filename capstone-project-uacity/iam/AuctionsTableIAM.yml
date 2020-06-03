@@ -1,4 +1,4 @@
- AuctionTableIAM:
+ AuctionsTableIAM:
   Effect: Allow
   Action: 
       - dynamodb:PutItem
