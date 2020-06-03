@@ -16,6 +16,9 @@ async function placeBid(event, context) {
 		},
 		ReturnValues: "ALL_NEW",
 	};
+	if(auctionId.status !== 'OPEN') {
+		throw new createError.Forbidden(`You cannot bid on closed auctions`);
+	}
     if (amount <= auctionId.highestBid.amount){
         throw new createError.Forbidden(`You cant bid low than ${auctionId.highestBid.amount}!`)
     }

@@ -7,11 +7,14 @@ async function createAuction(event, context) {
 	const { title } = event.body;
 	const now = new Date();
 	const userId = uuid();
+	const endDate = new Date();
+	endDate.setHours(now.getHours() +1 );
 	const auction = {
 		id: userId,
 		title,
 		status: "OPEN",
 		createdAt: now.toISOString(),
+		endDate: endDate.toISOString(),
 		highestBid: { amount: 0 },
 	};
 	try {
