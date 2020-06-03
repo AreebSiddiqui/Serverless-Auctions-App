@@ -7,6 +7,7 @@ import createError from "http-errors";
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 async function createAuction(event, context) {
 	const { title } = event.body;
+	const {email} = event.requestContext.authorizer;
 	const now = new Date();
 	const userId = uuid();
 	const endDate = new Date();
@@ -18,6 +19,7 @@ async function createAuction(event, context) {
 		createdAt: now.toISOString(),
 		endingAt: endDate.toISOString(),
 		highestBid: { amount: 0 },
+		seller: email,
 	};
 	try {
 		await dynamoDb
