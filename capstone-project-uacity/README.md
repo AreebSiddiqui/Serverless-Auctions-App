@@ -9,10 +9,12 @@ After 1 hour the bids will be closed automatically.
 
 AWS LAMBDA | CloudFormation | serverless framework | OAuth
 
-## How to execute ?
 
-Navigate to client folder run `npm install` command.
-then run `npm start` command, and you are good to go!
+## How to execute ?
+Forntend:https://github.com/AreebSiddiqui/Capstone-Client/edit/master/sls-course-frontend-master/
+Backend:https://github.com/AreebSiddiqui/Serverless-Auctions-App
+
+Clone Frontend install dependecies with `npm install` and start with `npm start`
 
 Resources form which I have able to complete this project: codingly.io.
 
