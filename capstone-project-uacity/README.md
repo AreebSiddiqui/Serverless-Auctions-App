@@ -15,5 +15,6 @@ Navigate to client folder run `npm install` command.
 then run `npm start` command, and you are good to go!
 
 Resources form which I have able to complete this project: codingly.io.
+
 Video demonstration of project: https://drive.google.com/file/d/17xyhhBLIWofFZ-bWf6aizC4qCTg0H7uj/view?usp=sharing
 
