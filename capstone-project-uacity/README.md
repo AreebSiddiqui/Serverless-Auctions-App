@@ -11,7 +11,7 @@ AWS LAMBDA | CloudFormation | serverless framework | OAuth
 
 
 ## How to execute ?
-Forntend:https://github.com/AreebSiddiqui/Capstone-Client/edit/master/sls-course-frontend-master/
+Frontend:https://github.com/AreebSiddiqui/Capstone-Client/edit/master/sls-course-frontend-master/
 Backend:https://github.com/AreebSiddiqui/Serverless-Auctions-App
 
 Clone Frontend install dependencies with `npm install` and start with `npm start`
