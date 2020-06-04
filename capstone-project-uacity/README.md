@@ -1,17 +1,19 @@
-# Codingly.io: Base Serverless Framework Template
+## Project Details
+This project is a capstone project for udacity nano-degree.
 
-https://codingly.io
+## Project Introduction
+This project allow users to create and bid on auctions.
+After 1 hour the bids will be closed automatically.
 
-## What's included
-* Folder structure used consistently across our projects.
-* [serverless-pseudo-parameters plugin](https://www.npmjs.com/package/serverless-pseudo-parameters): Allows you to take advantage of CloudFormation Pseudo Parameters.
-* [serverless-bundle plugin](https://www.npmjs.com/package/serverless-pseudo-parameters): Bundler based on the serverless-webpack plugin - requires zero configuration and fully compatible with ES6/ES7 features.
+## Tech
 
-## Getting started
-```
-sls create --name YOUR_PROJECT_NAME --template-url https://github.com/codingly-io/sls-base
-cd YOUR_PROJECT_NAME
-npm install
-```
+AWS LAMBDA | CloudFormation | serverless framework | OAuth
 
-You are ready to go!
+## How to execute ?
+
+Navigate to client folder run `npm install` command.
+then run `npm start` command, and you are good to go!
+
+Resources form which I have able to complete this project: codingly.io.
+Video demonstration of project: https://drive.google.com/file/d/17xyhhBLIWofFZ-bWf6aizC4qCTg0H7uj/view?usp=sharing
+
