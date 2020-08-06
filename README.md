@@ -8,8 +8,18 @@ This project allow users to create and bid on auctions.
 After 1 hour the bids will be closed automatically.
 
 ## Tech
-
 AWS LAMBDA | CloudFormation | serverless framework | OAuth
+
+## Screenshots
+![screenshot](images/cap-01)
+![screenshot](images/cap-02)
+![screenshot](images/cap-03)
+![screenshot](images/cap-04)
+
+## Video Link
+https://drive.google.com/file/d/17xyhhBLIWofFZ-bWf6aizC4qCTg0H7uj/view?usp=sharing
+
+
 
 ## How to execute ?
 Forntend:https://github.com/AreebSiddiqui/Capstone-Client
@@ -20,7 +30,6 @@ Clone Frontend navigate to project, install dependencies with `npm install` and 
 
 Resources form which I have able to complete this project: codingly.io.
 
-Video demonstration of project: https://drive.google.com/file/d/17xyhhBLIWofFZ-bWf6aizC4qCTg0H7uj/view?usp=sharing
 
 
 
