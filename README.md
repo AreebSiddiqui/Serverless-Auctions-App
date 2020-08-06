@@ -11,10 +11,10 @@ After 1 hour the bids will be closed automatically.
 AWS LAMBDA | CloudFormation | serverless framework | OAuth
 
 ## Screenshots
-![screenshot](images/cap-01)
-![screenshot](images/cap-02)
-![screenshot](images/cap-03)
-![screenshot](images/cap-04)
+![screenshot](images/cap-01.png)
+![screenshot](images/cap-02.png)
+![screenshot](images/cap-03.png)
+![screenshot](images/cap-04.png)
 
 ## Video Link
 https://drive.google.com/file/d/17xyhhBLIWofFZ-bWf6aizC4qCTg0H7uj/view?usp=sharing
